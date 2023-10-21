@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Begin der Navbar-Elemente*/
+
+nav {
+    background-color: #444;
+    text-align: center;
+    
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Ende der Navbar-Elemente*/
+
+.section {
+    padding: 20px;
+    background-color: #fff; 
+    margin: 20px;
+    border-radius: 5px;
+}
+
+#vorstellung {
+    margin: 20px;
+}
+
+
+
+#vorstellung .ich {
+    display: flex; 
+    align-items: center; /* Vertically center the image and text within the "ich" div */
+}
+
+#vorstellung img {
+    max-width: 25%; /* Beschränkung des Bildes bezogen auf die Größe */
+    margin-right: 10px; /* Kleiner Abstand nach rechts, für leserlichkeit */
+}
+
+#staerken {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    #vorstellung .ich {
+        display: block; /* Bei kleinen Screens wird der Text in Blockform angezeigt unter dem Bild, statt neben dem Bild */
+    }
+    #vorstellung img {
+        max-width: 100%; /* Als Folge dessen wird das Bild darüber angezeigt und nimmt 100% der Weite ein */
+        margin-right: 0; /* Automatischen Margin entfernen*/
+    }
+}
+
+.lebenslauf-downloadbutton{
+    color: blue;
+    background-color: aliceblue;
+    padding: 10px;  
+}
+
+.module-list {
+    list-style: none;
+    padding: 0;
+}
+
+.module-list li {
+    margin-bottom: 20px;
+}
+
+.module-list h3 {
+    margin-top: 0;
+}
+
+.module-list strong {
+    color: #333; 
+}
+
+.module-list li p {
+    margin-top: 5px;
+}
+
+
+
+
+.project {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h3 {
+    margin-top: 0;
+}
