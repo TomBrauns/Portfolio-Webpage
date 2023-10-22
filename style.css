@@ -2,7 +2,7 @@ body {
     font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: grey;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 /* Begin der Navbar-Elemente*/
 
 nav {
-    background-color: beige;
+    background-color: #333;
     text-align: center;
     padding: 10px 0;
 }
@@ -29,10 +29,28 @@ nav li {
     display: inline;
     margin: 0 30px;
     padding: 10px;
-    color:#f7f7f7
+    color:#f7f7f7;
+    position: relative;
 }
 
-.nav a {
+nav li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px; /* Rote Linie näher an die Navbar-Elemente anschliessen*/
+    width: 100%;
+    height: 2px;
+    background: red;
+    transform: scaleX(0); /* Startwert bei 0*/
+    transform-origin: center;
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+nav li:hover::after {
+    transform: scaleX(1); /* Erstellung einer Linie unter dem Wort (für 100% der Weite des Wortes) */
+}
+
+nav a {
     color: #fff;
     text-decoration: none;
 }
@@ -68,12 +86,15 @@ nav li {
 #staerken-und-schwaechen {
     display: flex;
     flex-wrap: wrap; 
+    
 }
 
 .column {
     flex: 1;
     padding: 20px;
+    border-radius: 10px;
     border: 1px solid #ccc;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -89,9 +110,11 @@ nav li {
 
 .lebenslauf-downloadbutton{
     color: blue;
-    background-color: aliceblue;
+    background-color: white;
     padding: 10px;  
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .module-list {
@@ -156,4 +179,7 @@ h2 {
 
 h3 {
     margin-top: 0;
+}
+h4 {
+    margin: 0;
 }
