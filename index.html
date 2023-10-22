@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -17,39 +21,52 @@
             <li><a href="#studiumsablauf">Belegte Module</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#weitere-links">Weitere Links</a></li>
-
         </ul>
     </nav>
 
     
 
     <div class="section" id="vorstellung">
-        <div class="caption">
-            <h2>Das bin ich</h2>
-        </div>
         <div class = "ich">
             <img src="Myself.jpg" alt="Ich">
-            <div class ="vorstellungstext">
-                <h3>Zu meiner Person</h3>
-                <p> Mein Name ist Tom Brauns und ich hatte über die letzten 3 1/2 Jahre Informatik studiert.<br>
-                    Mein Bachelor ist nun seit der Verteidigung der Bachelorarbeit am 04.10.2023 offiziell beendet und die Bachelorarbeit selbst wurde mit 1.3 abgeschlossen.<br>
-                    Nun bin ich also aktiv auf der Berufssuche, so wie bemüht darum, meine theoretischen und praktischen Erfahrungen zu erweitern.<br>
-                    In diesem Zeitraum hatte ich das Vergnügen, mich in vielen Entwicklungsumgebungen, sowie Programmiersprachen zu erproben.<br>
-                    Das beste waren hierbei für mich die Projekte, da man hier über längere Zeit an einem Resultat arbeitet<br>
-                    und etwas erschaffen kann, auf das man stolz sein kann (So wie hoffentlich diese Seite hier).<br>
-                    Weiter sind auch die Gruppenprojekte stets sehr prägend für mich gewesen,<br>
+            <div class ="text-box">
+                <h2>Zu meiner Person</h2>
+                <p> Mein Name ist Tom Brauns und ich hatte über die letzten 3 1/2 Jahre Informatik studiert.
+                    Mein Bachelor ist nun seit der Verteidigung der Bachelorarbeit am 04.10.2023 offiziell beendet und die Bachelorarbeit selbst wurde mit 1.3 abgeschlossen.
+                    Nun bin ich also aktiv auf der Berufssuche, so wie bemüht darum, meine theoretischen und praktischen Erfahrungen zu erweitern.
+                    In diesem Zeitraum hatte ich das Vergnügen, mich in vielen Entwicklungsumgebungen, sowie Programmiersprachen zu erproben.
+                    Das beste waren hierbei für mich die Projekte, da man hier über längere Zeit an einem Resultat arbeitet
+                    und etwas erschaffen kann, auf das man stolz sein kann (So wie hoffentlich diese Seite hier).
+                    Weiter sind auch die Gruppenprojekte stets sehr prägend für mich gewesen,
                     da man neue Einsichten von den jeweiligen Gruppenmitgliedern erhalten konnte und mit Hilfe einer guten Planung so mehr schaffen konnte.
-                    Erfahrungen sind hierbei bereits mit dem Scrum-Framework vorhanden, wobei im Verlauf des Teamorientierten Projektes der Hochschule Worms über einen Zeitraum von 6 Wochen intensiv an der Entwicklung einer Spenden-App gearbeitet wurden.<br>
-                    Im Verlauf dieses Projektes hatte ich, neben den Aufgaben eines Programmierers, auch die Chance,<br>
+                    Erfahrungen sind hierbei bereits mit dem Scrum-Framework vorhanden, wobei im Verlauf des Teamorientierten Projektes der Hochschule Worms
+                     über einen Zeitraum von 6 Wochen intensiv an der Entwicklung einer Spenden-App gearbeitet wurden.
+                    Im Verlauf dieses Projektes hatte ich, neben den Aufgaben eines Programmierers, auch die Chance,
                     die Rolle des Product Owners auszuüben und somit sowohl dem Team, als auch dem Kunden als Ansprechpartner zur Verfügung zu stehen. 
                 </p>
             </div>
         </div>
+    </div>    
         <!-- Überlegung ob man hier nicht Stärken und Schwächen in eine Div packt, und dann links Stärken und rechts Schwächen listet-->
-        <div class="section" id="staerken">
-            <h3>Meine Stärken</h3>
-            <p>Guter Zuhörer</p>
+        <div class="section" id="staerken und schwaechen">
+            <h3>Stärken und Schwächen</h3>
+            <div class="column">
+                <h4> Meine Stärken</h4>
+                <ul>
+                    <li>Teamarbeit</li>
+                    <li>Planend</li>
+                    <li>Logisches Denken</li>
+                    <li>Motiviert, neues zu erlernen</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4> Meine Schwächen</h4>
+                <ul>
+                    <li>Nur versiert in gewissen Sprachen</li>
+                </ul>
+            </div>
         </div>
+        
         <div class="section" id="hobbies">
             <h3>Hobbies</h3>
             <p>Zu meinen Hobbies gehören:
@@ -90,7 +107,7 @@
                     Programmieren in C
                     </li>
                     <li><strong>Mathematik</strong><br>
-                        Grundlegendes Mathematisches Verständnis und Logik
+                    Grundlegendes Mathematisches Verständnis und Logik
                     </li>
                 </ul>
             
@@ -115,10 +132,10 @@
                 <h3>3. Semester</h3> 
                 <ul>
                     <li><strong>Software-Qualität</strong><br> 
-                    Lernen von Praxisformen(Scrum), sowie Entwurf von Tests
+                    Lernen von Praxisformen(Scrum), sowie Entwurf von Tests.
                     </li>
                     <li><strong>Software-Engineering</strong><br>
-                    
+                    Lehren des Wasserfall, sowie dem Scrum-Verfahren, aber auch UML.
                     </li>
                     <li><strong>Webentwicklung</strong><br>
                     HTML, CSS und Javascript lernen, sowie eine Website erstellen.
@@ -127,7 +144,7 @@
                     Unity, Raytracing und Theorie der Materie.
                     </li>
                     <li><strong>Programmierung Graphischer Oberflächen</strong><br>
-                    
+                    Lernen der Graphical User Interface-Konzeption, sowie der Erstellung einer Anwendung.
                     </li>
                 </ul>   
                 <h3>4. Semester</h3>
@@ -139,8 +156,7 @@
                     Entwerfen eines Alexa-Skills.
                     </li>
                     <li><strong>Computergrafik</strong><br>
-                        <!-- hier nomma nachschauen-->
-                    Theorie, sowie simple selbsterstellung von Computergrafiken
+                    Theorie, sowie Verständnis der Grafiken auf Websites.
                     </li>
                     
                 </ul>
@@ -150,16 +166,16 @@
                     Verfassen von Exposés, sowie das lernen von Zitierweisen.
                     </li>
                     <li><strong>Client/Server-Anwendungen</strong><br>
-                    
+                    Web-Verbindungen und 
                     </li>
                     <li><strong>User-Experience</strong><br>
-                    
+                    UX-Designmethodiken lernen und anwenden.
                     </li>
                     <li><strong>Klinische Informationssysteme</strong><br>
-                    Informatikanwendungen im Medizin-Sektor
+                    Informatikanwendungen im Medizin-Sektor.
                     </li>
                     <li><strong>Software Architektur</strong><br>
-                    Theorie zu Software-Architekturen, sowie die Entwicklung einer Software-Architektur
+                    Theorie zu Software-Architekturen, sowie die Entwicklung einer Software-Architektur.
                     </li>
                 </ul>
                 <h3>6. Semester</h3>
@@ -178,17 +194,17 @@
                 <h3>7. Semester</h3>
                 <ul>
                     <li><strong>Fachenglisch</strong><br> 
-                    Lesen von Fachliteratur, sowie Steigerung der Kenntnisse (C1-Zertifikat)
+                    Lesen von Fachliteratur, sowie Steigerung der Kenntnisse (C1-Zertifikat).
                     <li><strong>Teamorientiertes Projekt</strong><br> 
-                    Scrum-Projekt in Teams über 6 Wochen
+                    Scrum-Projekt in Teams über 6 Wochen.
                     <li><strong>Bachelorarbeit</strong><br> 
-                    Planung der Bachelorarbeit, sowie der Start der Bachelorarbeit
+                    Planung der Bachelorarbeit, sowie der Start der Bachelorarbeit.
                     
                 </ul>
                 <h3>8. Semester</h3>
                 <ul>
                     <li><strong>Bachelorarbeit</strong><br> 
-                    Beenden, sowie das Verteidigen der Bachelorarbeit
+                    Beenden, sowie das Verteidigen der Bachelorarbeit.
                 </ul>
             </li>
     </ul>

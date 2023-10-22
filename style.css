@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
@@ -11,18 +11,11 @@ header {
     text-align: center;
     padding: 20px 0;
 }
-
-h1 {
-    margin: 0;
-}
-
 /* Begin der Navbar-Elemente*/
-/* Still need to change the spacing inbetween */
 
 nav {
-    background-color: #444;
+    background-color: beige;
     text-align: center;
-    
     padding: 10px 0;
 }
 
@@ -34,7 +27,9 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 30px;
+    padding: 10px;
+    color:#f7f7f7
 }
 
 .nav a {
@@ -63,18 +58,26 @@ nav li {
 }
 
 #vorstellung img {
-    max-width: 25%; /* Beschränkung des Bildes bezogen auf die Größe */
+    max-width: 320px; /* Beschränkung des Bildes bezogen auf die Größe */
     margin-right: 10px; /* Kleiner Abstand nach rechts, für leserlichkeit */
 }
 
-#staerken {
+#vorstellung .text-box {
+    flex: 1; 
+}
+#staerken-und-schwaechen {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.column {
+    flex: 1;
     padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 @media (max-width: 768px) {
+    
     #vorstellung .ich {
         display: block; /* Bei kleinen Screens wird der Text in Blockform angezeigt unter dem Bild, statt neben dem Bild */
     }
@@ -88,6 +91,7 @@ nav li {
     color: blue;
     background-color: aliceblue;
     padding: 10px;  
+    border-radius: 10px;
 }
 
 .module-list {
@@ -100,7 +104,9 @@ nav li {
 }
 
 .module-list h3 {
-    margin-top: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 .module-list strong {
@@ -110,9 +116,6 @@ nav li {
 .module-list li p {
     margin-top: 5px;
 }
-
-
-
 
 .project {
     margin: 20px 0;
@@ -130,7 +133,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
 }
 
 ul {
@@ -141,6 +144,10 @@ ul {
 
 ul li {
     margin: 5px 0;
+}
+
+h1 {
+    margin: 0;
 }
 
 h2 {
