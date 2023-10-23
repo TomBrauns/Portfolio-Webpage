@@ -13,6 +13,7 @@ header {
     /* Next line adds a white line between header & navbar to cut them visually*/
     border-bottom: 2px solid white
 }
+
 /* Begin der Navbar-Elemente*/
 
 nav {
@@ -59,13 +60,6 @@ nav a {
 
 /* Ende der Navbar-Elemente*/
 
-.section {
-    padding: 20px;
-    background-color: #fff; 
-    margin: 20px;
-    border-radius: 5px;
-}
-
 #vorstellung {
     margin: 20px;
 }
@@ -85,6 +79,13 @@ nav a {
 
 #vorstellung .text-box {
     flex: 1; 
+}
+
+.section {
+    padding: 20px;
+    background-color: #fff; 
+    margin: 20px;
+    border-radius: 5px;
 }
 
 .row{
@@ -126,8 +127,7 @@ nav a {
     background-color: white;
     padding: 10px;  
     border-radius: 10px;
-    display: block;
-    margin: 0 auto;
+    
 }
 /* Projekteliste*/
 
