@@ -106,7 +106,8 @@ nav a {
     .row {
         flex-direction: column;
     }
-    
+   
+
     #vorstellung .ich {
         display: block; /* Bei kleinen Screens wird der Text in Blockform angezeigt unter dem Bild, statt neben dem Bild */
     }
@@ -166,18 +167,8 @@ nav a {
     margin-top: 5px;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1px 0;
-}
-.footer-icons i {
-    font-size: 24px;
-    color: #fff;
-    margin:10px;
-}
 
+/* Allgemeines */
 ul {
     list-style-type: none;
     margin: 0;
@@ -201,4 +192,17 @@ h3 {
 }
 h4 {
     margin: 0;
+}
+
+/* Footer CSS */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+}
+.footer-icons i {
+    font-size: 24px;
+    color: #fff;
+    margin:10px;
 }
