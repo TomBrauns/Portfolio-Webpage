@@ -68,17 +68,19 @@ nav a {
 
 #vorstellung .ich {
     display: flex; 
-    align-items: center; /* Vertically center the image and text within the "ich" div */
+    align-items: flex-start; /* Vertically center the image and text within the "ich" div */
 }
 
 #vorstellung img {
     max-width: 320px; /* Beschränkung des Bildes bezogen auf die Größe */
-    margin: 10px; /* Kleiner Abstand nach rechts, für leserlichkeit */
+    margin-right: 40px;
+    margin-bottom: 20px; /* Kleiner Abstand nach rechts, für leserlichkeit */
     border: 10px white;
 }
 
 #vorstellung .text-box {
     flex: 1; 
+    
 }
 
 .section {
