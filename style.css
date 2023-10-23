@@ -87,15 +87,25 @@ nav a {
     flex: 1; 
 }
 
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
 
 .column {
+    flex:1;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #ccc;
     margin: 10px;
 }
 
+
 @media (max-width: 768px) {
+    
+    .row {
+        flex-direction: column;
+    }
     
     #vorstellung .ich {
         display: block; /* Bei kleinen Screens wird der Text in Blockform angezeigt unter dem Bild, statt neben dem Bild */
@@ -103,6 +113,10 @@ nav a {
     #vorstellung img {
         max-width: 100%; /* Als Folge dessen wird das Bild darüber angezeigt und nimmt 100% der Weite ein */
         margin-right: 0; /* Automatischen Margin entfernen*/
+    }
+    .special-section{
+        display:block;
+        width: auto;
     }
 }
 
@@ -114,6 +128,20 @@ nav a {
     display: block;
     margin: 0 auto;
 }
+/* Projekteliste*/
+
+.project {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+}
+/* Projekteliste Ende */ 
 
 .module-list {
     list-style: none;
@@ -138,24 +166,6 @@ nav a {
     margin-top: 5px;
 }
 
-.project {
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
-    transition: all 1s;
-}
-.show {
-    opacity: 1;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    
-}
-
 .footer {
     background-color: #333;
     color: #fff;
@@ -165,7 +175,7 @@ img {
 .footer-icons i {
     font-size: 24px;
     color: #fff;
-    margin:10;
+    margin:10px;
 }
 
 ul {
