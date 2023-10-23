@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="page.js"></script>
     
@@ -19,8 +20,8 @@
     <nav>
         <ul>
             <li><a href="#cv">CV</a></li>
-            <li><a href="#studiumsablauf">Belegte Module</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#studiumsablauf">Belegte Module</a></li>
             <li><a href="#weitere-links">Weitere Links</a></li>
         </ul>
     </nav>
@@ -48,37 +49,36 @@
             </div>
         </div>
     </div>    
-        <div class="section" id="staerken und schwaechen">
-            <h3>Stärken und Schwächen</h3>
-            <div class="column">
-                <h4> Meine Stärken</h4>
-                <ul>
-                    <li>Teamarbeit</li>
-                    <li>Planend</li>
-                    <li>Logisches Denken</li>
-                    <li>Motiviert, neues zu erlernen</li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4> Meine Schwächen</h4>
-                <ul>
-                    <li>Nur versiert in gewissen Sprachen</li>
-                </ul>
-            </div>
+
+    <div class="section" id="staerken und schwaechen">
+        <h3>Stärken und Schwächen</h3>
+        <div class="column">
+            <h4> Meine Stärken</h4>
+            <ul>
+                <li>Teamarbeit</li>
+                <li>Planend</li>
+                <li>Logisches Denken</li>
+                <li>Motiviert, neues zu erlernen</li>
+            </ul>
         </div>
-        
-        <div class="section" id="hobbies">
-            <h3>Hobbies</h3>
-            <p>Zu meinen Hobbies gehören:
-                <ul>
-                    <li> Sport</li>
-                    <li> Zeit mit Freunden verbringen (Gesellschaftsspiele wie Skat etc.)</li>
-                    <li> Wissenserweiterung </li>
-                    <li> Willkürliche Ideen versuchen zu programmieren </li>
-                </ul>
-            </p>
+        <div class="column">
+            <h4> Meine Schwächen</h4>
+            <ul>
+                <li>Nur versiert in gewissen Sprachen</li>
+            </ul>
         </div>
     </div>
+        
+    <div class="section" id="hobbies">
+        <h3>Meine Hobbies</h3>
+        <ul>
+            <li> Sport</li>
+            <li> Zeit mit Freunden verbringen (Gesellschaftsspiele wie Skat etc.)</li>
+            <li> Wissenserweiterung </li>
+            <li> Willkürliche Ideen versuchen zu programmieren </li>
+        </ul>
+    </div>
+    
 
     <div class="section" id="cv">
         <h2>Lebenslauf</h2>
@@ -87,7 +87,54 @@
             <button class="lebenslauf-downloadbutton">Lebenslauf Herunterladen</button>
         </a>
     </div>
-
+    <div class="section" id="projects">
+        <h2>Bisherige Projekte:</h2>
+        <div class="project">
+            <h3>Flutter Umfrage</h3>
+            <p>Erstellung eines Flutter Fragebogens, um die einzelnen Widgets vorzustellen.</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/PGO-Questionaire">https://github.com/TomBrauns/PGO-Questionaire</a></p>
+        </div>
+        <div class="project">
+            <h3>Corona Website</h3>
+            <p>Entwicklung einer Corona-Website mit Tipps und Tricks für Nutzer, sowie aktuellen Corona-Zahlen des RKI</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Webpage">https://github.com/TomBrauns/Webpage</a></p>
+        </div>
+        <div class="project">
+            <h3>Corona Alexa-Skill</h3>
+            <p>Entwicklung eines Skills für Alexa, mit welchem Corona-Inzidenzen in den jeweiligen Städten, sowie Bundesländern abgefragt werden kann.</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Corona-Skill">https://github.com/TomBrauns/Corona-Skill</a> </p>
+        </div>
+        <div class="project">
+            <h3>Software-Architektur eines MMO-Spieles</h3>
+            <p>In diesem Projekt wurde eine Software-Architektur für ein MMO-Spiel erstellt.</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Software-Architecture">https://github.com/TomBrauns/Software-Architecture</a> </p>
+        </div>
+        <div class="project">
+            <h3>Kotlin App</h3>
+            <p>In diesem Projekt wurde in Android Studios in Kotlin eine Rezepte-App entwickelt.
+            Genauer wurde hierfür eine Rezepte Datenbank erstellt, auf welche dann mit SQL-Befehlen zugegriffen werden konnte. Somit konnten Nutzer Ihre Woche planen, sowie die Zutaten einkaufen, die sie benötigen.</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Foodplanner0_1">https://github.com/TomBrauns/Foodplanner0_1</a> </p>
+        </div>
+        <div class="project">
+            <h3>Flutter Lions-Club App</h3>
+            <p>Erstellung einer Flutter-App über einen Zeitraum von 6 Wochen in einem Scrum Team. Als Kunde galt hierfür der Lions-Club.</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/LionsApp">https://github.com/TomBrauns/LionsApp</a></p>
+        </div>
+        <div class="project">
+            <h3>Bachelorarbeit</h3>
+            <p>Bachelorarbeit bezüglich der Thematik:"Digital Twins für die persönliche Entscheidungsfindung.
+            Betreut von Dr. Jens Kohler wurde sich über drei Monate hinweg mit der Frage beschäftigt, wie virtuelle Modelle dem Menschen helfen können, seine Zukunft zu gestalten.
+            Genauer wurde hierbei untersucht, wie Nutzern Berufsempfehlungen generiert werden können basierend auf den hochgeladenen Daten.
+            </p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Bachelor-expose">https://github.com/TomBrauns/Bachelor-expose</a></p>
+        </div>
+        <div class="project">
+            <h3>Portfolio-Webpage</h3>
+            <p>Entwicklung einer Website zu meiner Person, um zum einen meinen Wissensstand bezogen auf HTML zu erneuern, aber auch um besser meine Kenntnisse und Wissensstände darstellen zu können.</p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Portfolio-Webpage">https://github.com/TomBrauns/Portfolio-Webpage</a> </p>
+        </div>
+       
+    </div>
     <div class="section" id="studiumsablauf">
         <h2>Belegte Module</h2>
         <p>In diesem Abschnitt werde ich auf die in den jeweiligen Semestern belegten Module eingehen</p>
@@ -209,68 +256,15 @@
             </li>
     </ul>
     </div>
-    <div class="section" id="projects">
-        <h2>Bisherige Projekte:</h2>
-        <div class="project">
-            <h3>Flutter Umfrage</h3>
-            <p>Erstellung eines Flutter Fragebogens, um die einzelnen Widgets vorzustellen.</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/PGO-Questionaire">https://github.com/TomBrauns/PGO-Questionaire</a></p>
-        </div>
-        <div class="project">
-            <h3>Corona Website</h3>
-            <p>Entwicklung einer Corona-Website mit Tipps und Tricks für Nutzer, sowie aktuellen Corona-Zahlen des RKI</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Webpage">https://github.com/TomBrauns/Webpage</a></p>
-        </div>
-        <div class="project">
-            <h3>Corona Alexa-Skill</h3>
-            <p>Entwicklung eines Skills für Alexa, mit welchem Corona-Inzidenzen in den jeweiligen Städten, sowie Bundesländern abgefragt werden kann.</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Corona-Skill">https://github.com/TomBrauns/Corona-Skill</a> </p>
-        </div>
-        <div class="project">
-            <h3>Software-Architektur eines MMO-Spieles</h3>
-            <p>In diesem Projekt wurde eine Software-Architektur für ein MMO-Spiel erstellt.</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Software-Architecture">https://github.com/TomBrauns/Software-Architecture</a> </p>
-        </div>
-        <div class="project">
-            <h3>Kotlin App</h3>
-            <p>In diesem Projekt wurde in Android Studios in Kotlin eine Rezepte-App entwickelt.
-            Genauer wurde hierfür eine Rezepte Datenbank erstellt, auf welche dann mit SQL-Befehlen zugegriffen werden konnte. Somit konnten Nutzer Ihre Woche planen, sowie die Zutaten einkaufen, die sie benötigen.</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Foodplanner0_1">https://github.com/TomBrauns/Foodplanner0_1</a> </p>
-        </div>
-        <div class="project">
-            <h3>Flutter Lions-Club App</h3>
-            <p>Erstellung einer Flutter-App über einen Zeitraum von 6 Wochen in einem Scrum Team. Als Kunde galt hierfür der Lions-Club.</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/LionsApp">https://github.com/TomBrauns/LionsApp</a></p>
-        </div>
-        <div class="project">
-            <h3>Bachelorarbeit</h3>
-            <p>Bachelorarbeit bezüglich der Thematik:"Digital Twins für die persönliche Entscheidungsfindung.
-            Betreut von Dr. Jens Kohler wurde sich über drei Monate hinweg mit der Frage beschäftigt, wie virtuelle Modelle dem Menschen helfen können, seine Zukunft zu gestalten.
-            Genauer wurde hierbei untersucht, wie Nutzern Berufsempfehlungen generiert werden können basierend auf den hochgeladenen Daten.
-            </p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Bachelor-expose">https://github.com/TomBrauns/Bachelor-expose</a></p>
-        </div>
-        <div class="project">
-            <h3>Portfolio-Webpage</h3>
-            <p>Entwicklung einer Website zu meiner Person, um zum einen meinen Wissensstand bezogen auf HTML zu erneuern, aber auch um besser meine Kenntnisse und Wissensstände darstellen zu können.</p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Portfolio-Webpage">https://github.com/TomBrauns/Portfolio-Webpage</a> </p>
-        </div>
-       
-    </div>
-
-    <div class="section" id="weitere-links">
-        <h2>Weitere Links:</h2>
-        <ul>
-            <li>E-mail: <a href="mailto:tomalexanderbrauns@gmail.com">tomalexanderbrauns@gmail.com</a></li>
-            <li>Github: <a href="https://github.com/TomBrauns">https://github.com/TomBrauns</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/tom-brauns-760923290/">https://www.linkedin.com/in/tom-brauns-760923290/</a></li>
-            <li>Xing: <a href="https://www.xing.com/profile/Tom_Brauns052784">https://www.xing.com/profile/Tom_Brauns052784</a></li>
-
-        </ul>
-    </div>
-
-    <footer>
+    <footer class="footer">
         <p>&copy; 21.10.2023, Tom Brauns</p>
+        <div class="footer-icons">
+            <a href="mailto:tomalexanderbrauns@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/TomBrauns"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tom-brauns-760923290/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.xing.com/profile/Tom_Brauns052784"><i class="fab fa-xing"></i></a>
+        </div>
     </footer>
+    
 </body>
 </html>
