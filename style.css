@@ -80,6 +80,7 @@ nav a {
 
 #vorstellung .text-box {
     flex: 1; 
+    margin-right: 20px;
     
 }
 
@@ -117,10 +118,6 @@ nav a {
     #vorstellung img {
         max-width: 100%; /* Als Folge dessen wird das Bild darüber angezeigt und nimmt 100% der Weite ein */
         margin-right: 0; /* Automatischen Margin entfernen*/
-    }
-    .special-section{
-        display:block;
-        width: auto;
     }
 }
 
