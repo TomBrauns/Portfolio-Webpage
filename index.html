@@ -91,10 +91,16 @@
             <button class="lebenslauf-downloadbutton">Lebenslauf Herunterladen</button>
         </a>
     </div>
+
     <div class="section" id="projects">
         <h2>Bisherige Projekte:</h2>
+        <div class="filter-buttons">
+            <button onclick="toggleAlphabeticalSort('alphabetical')" id="alphabeticalSortButton">Alphabetisch sortieren</button>
+            <button onclick="toggleDateSort()" id="dateSortButton">Letzte Veränderung</button>
+        </div>
 
-        <div class="project">
+        <div id="projectContainer">
+        <div class="project" data-access="2023-10-22">
             <h3>Flutter Umfrage</h3>
             <p>In diesem Projekt wurde sich recht früh im Studium mit der Erstellung eines Fragebogens beschäftigt. 
                 Genauer wurde über mehrere Monate hinweg sich in einem Team bestehend aus drei Personen mit der Programmiersprache Dart beschäftigt, 
@@ -102,7 +108,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/PGO-Questionaire">https://github.com/TomBrauns/PGO-Questionaire</a></p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-10-19">
             <h3>Corona Website</h3>
             <p>In diesem Projekt wurde eine Corona-Website programmiert in einem Team von zwei Personen. Hierfür wurden HTML, CSS aber auch Javascript verwendet. 
             Im Detail wurde eine Startseite programmiert, sowie ein Youtube Video, welches Corona für Kinder simpel erklärt. Auch liefert die Seite aktuelle Corona-Fallzahlen für Nutzer.
@@ -110,10 +116,10 @@
             Weiter beinhaltet die Seite Tipps und Tricks für Nutzer, wie man sich am besten schützt, sowie eine Auskunft über Testzentren. 
             Abschliessend gibt es eine Seite, welche Informationen über die Entwickler beinhaltet.
             </p>
-            <p>Github-Link: <a href="https://github.com/TomBrauns/Webpage">https://github.com/TomBrauns/Webpage</a></p>
+            <p>Github-Link: <a href="https://github.com/TomBrauns/Corona-Webpage">https://github.com/TomBrauns/Corona-Webpage</a></p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-10-19">
             <h3>Corona Alexa-Skill</h3>
             <p>Entwicklung eines Skills für Alexa, mit welchem Corona-Inzidenzen in den jeweiligen Städten, sowie Bundesländern abgefragt werden können. 
                 Programmiert wurde dieses Projekt in Python, und als Datenbank wurde MongoDB verwendet, um die Staaten, aber auch die Distrikte niederzuschreiben. 
@@ -121,7 +127,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/Corona-Skill">https://github.com/TomBrauns/Corona-Skill</a> </p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-10-06">
             <h3>Software-Architektur eines MMO-Spieles</h3>
             <p>In diesem Projekt wurde eine Software-Architektur für ein MMO-Spiel erstellt. 
             Hierfür wurden zunächst die wichtigsten Qualitätsattribute, sowie die bedeutenden Stakeholder festgehalten.
@@ -133,7 +139,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/Software-Architecture">https://github.com/TomBrauns/Software-Architecture</a> </p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-02-07">
             <h3>Kotlin App</h3>
             <p>In diesem Projekt wurde in Android Studios in Kotlin eine Rezepte-App entwickelt.
             Hierfür wurde eine Rezepte Datenbank erstellt, auf welche dann mit SQL-Befehlen zugegriffen werden konnte.
@@ -143,7 +149,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/Foodplanner0_1">https://github.com/TomBrauns/Foodplanner0_1</a> </p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-09-16">
             <h3>Flutter Lions-Club App</h3>
             <p>In diesem Projekt wurde eine Flutter-App über einen Zeitraum von 6 Wochen in einem Scrum Team entwickelt. Als Kunde galt hierfür der Lions Club in Kaiserslautern.
                 In diesem Projekt wurden zunächst einmal Anforderungen des Kunden entworfen und in Screens verwandelt. Basierend auf diesen Screens wurden dann in Dart die Screens entwickelt,
@@ -154,7 +160,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/LionsApp">https://github.com/TomBrauns/LionsApp</a></p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-10-06">
             <h3>Bachelorarbeit</h3>
             <p>Bachelorarbeit bezüglich der Thematik: "Digital Twins für die persönliche Entscheidungsfindung."<br>
                Endnote: 1.3<br>
@@ -167,7 +173,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/Bachelor-expose">https://github.com/TomBrauns/Bachelor-expose</a></p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-11-17">
             <h3>Portfolio-Webpage</h3>
             <p>Entwicklung einer Website zu meiner Person, um zum einen meinen Wissensstand bezogen auf HTML zu erneuern,
                  aber auch um besser meine Kenntnisse und Wissensstände darstellen zu können.
@@ -175,7 +181,7 @@
             <p>Github-Link: <a href="https://github.com/TomBrauns/TomBrauns.github.io">https://github.com/TomBrauns/Portfolio-Webpage</a> </p>
         </div>
 
-        <div class="project">
+        <div class="project" data-access="2023-11-16">
             <h3>Java Programm</h3>
             <p>Einarbeitung in die Programmiersprache Java, sowie die Verknüpfung dieses Projektes mit Github in der Eclipse IDE. Bei diesem Projekt handelt es sich um einen Taschenrechner,
                 welcher die Operationen Addition, Multiplikation, Subtraktion, aber auch Division durchführen kann. Weiter kann der Taschenrechner mehrere Rechnungen durchführen. 
@@ -183,8 +189,9 @@
                </p>
             <p>Github-Link: <a href="https://github.com/TomBrauns/Calculator-Project">https://github.com/TomBrauns/Calculator-Project</a> </p>
         </div>
-       
     </div>
+    </div>
+
     <div class="section" id="studiumsablauf">
         <h2>Belegte Module</h2>
         <p>In diesem Abschnitt werde ich auf die in den jeweiligen Semestern belegten Module eingehen</p>
