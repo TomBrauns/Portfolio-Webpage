@@ -31,7 +31,6 @@ function toggleDateSort() {
 
     var buttonText = dateOrderAsc ? 'Älteste Projekte' : 'Aktuellste Projekte';
     document.querySelector('#dateSortButton').innerText = buttonText;
-
     sortProjects('latest', dateOrderAsc ? 'asc' : 'desc');
 }
 
@@ -40,17 +39,24 @@ function sortProjects(type, order) {
     var projectsContainer = document.getElementById('projectContainer');
     var projects = Array.from(document.querySelectorAll('.project'));
 
-    projects.sort(function (firstValue, secondValue) {
+    projects.sort(function (firstProject, secondProject) {
         var firstValue, secondValue;
 
         if (type === 'alphabetical') {
-            firstValue = firstValue.querySelector('h3').innerText.toLowerCase();
-            secondValue = secondValue.querySelector('h3').innerText.toLowerCase();
+            firstValue = firstProject.querySelector('h3').innerText.toLowerCase();
+            secondValue = secondProject.querySelector('h3').innerText.toLowerCase();
         } else if (type === 'latest') {
-            firstValue = new Date(firstValue.dataset.access);
-            secondValue = new Date(secondValue.dataset.access);
-            console.log("firstValue:", firstValue);
-            console.log("secondValue:", secondValue);
+            var firstDateText = getLastModificationText(firstProject);
+            var secondDateText = getLastModificationText(secondProject);
+
+            var firstDate = parseDate(firstDateText);
+            var secondDate = parseDate(secondDateText);
+
+            console.log("First date: ", firstDate);
+            console.log("Second date: ", secondDate);
+
+            firstValue = firstDate;
+            secondValue = secondDate;
         }
 
         if (order === 'asc') {
@@ -65,4 +71,39 @@ function sortProjects(type, order) {
     projects.forEach(function (project) {
         projectsContainer.appendChild(project);
     });
+}
+
+function getLastModificationText(project) {
+    var paragraphs = project.querySelectorAll('.project p');
+    var lastModificationText = '';
+
+    for (var i = 0; i < paragraphs.length; i++) {
+        var paragraphText = paragraphs[i].innerText.trim();
+        if (paragraphText.startsWith('Letzte Änderung:')) {
+            lastModificationText = paragraphText.replace('Letzte Änderung: ', '');
+            break;
+        }
+    }
+
+    return lastModificationText;
+}
+
+
+
+function parseDate(dateText) {
+
+    console.log("Input date text: ", dateText);
+
+    var dateParts = dateText.split('.');
+
+    if (dateParts.length !== 3) {
+        console.log("Invalid date format");
+        return null; // or any other value that indicates no date
+    }
+
+    var day = parseInt(dateParts[0], 10);
+    var month = parseInt(dateParts[1], 10) - 1; // Months are zero-based in JavaScript Date objects
+    var year = parseInt(dateParts[2], 10);
+    
+    return new Date(year, month, day);
 }
