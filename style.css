@@ -124,11 +124,23 @@ nav a {
 .lebenslauf-downloadbutton{
     color: blue;
     background-color: white;
+    cursor: pointer; /* Add a pointer cursor on hover */
     padding: 10px;  
     border-radius: 10px;
     
 }
+
 /* Projekteliste*/
+
+.filter-buttons button {
+    color: blue;
+    background-color: white;
+    /*padding: 10px 15px;  Padding for the button */
+    padding: 10px;  
+    border-radius: 10px;
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
 
 .project {
     margin: 20px 0;

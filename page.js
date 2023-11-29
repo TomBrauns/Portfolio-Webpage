@@ -20,8 +20,10 @@ let dateOrderAsc = true;
 function toggleAlphabeticalSort(type) {
     alphabeticalOrderAsc = !alphabeticalOrderAsc; // Toggle the sorting order
 
-    var buttonText = alphabeticalOrderAsc ? 'Alphabetisch Sortieren (A-Z)' : 'Alphabetisch Sortieren (Z-A)';
-    document.querySelector('#alphabeticalSortButton').innerText = buttonText;
+    var arrow = alphabeticalOrderAsc ? '<i class="fas fa-arrow-down"></i>' : '<i class="fas fa-arrow-up"></i>';
+    var buttonText = 'Alphabetisch Sortieren: ' + arrow;
+
+    document.querySelector('#alphabeticalSortButton').innerHTML = buttonText;
 
     sortProjects('alphabetical', alphabeticalOrderAsc ? 'desc' : 'asc');
 }
@@ -29,8 +31,10 @@ function toggleAlphabeticalSort(type) {
 function toggleDateSort() {
     dateOrderAsc = !dateOrderAsc; // Toggle the sorting order
 
-    var buttonText = dateOrderAsc ? 'Älteste Projekte' : 'Aktuellste Projekte';
-    document.querySelector('#dateSortButton').innerText = buttonText;
+    var arrow = dateOrderAsc ? '<i class="fas fa-arrow-down"></i>' : '<i class="fas fa-arrow-up"></i>';
+    var buttonText = 'Letzte Veränderung: ' + arrow;
+
+    document.querySelector('#dateSortButton').innerHTML = buttonText;
     sortProjects('latest', dateOrderAsc ? 'asc' : 'desc');
 }
 
@@ -51,9 +55,6 @@ function sortProjects(type, order) {
 
             var firstDate = parseDate(firstDateText);
             var secondDate = parseDate(secondDateText);
-
-            console.log("First date: ", firstDate);
-            console.log("Second date: ", secondDate);
 
             firstValue = firstDate;
             secondValue = secondDate;
