@@ -121,7 +121,7 @@ nav a {
     }
 }
 
-.lebenslauf-downloadbutton{
+.button{
     color: blue;
     background-color: white;
     cursor: pointer; /* Add a pointer cursor on hover */
